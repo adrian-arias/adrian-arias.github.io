@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'hvd_edding_780normal';
+    src: url('../font/hvd_edding-webfont.woff2') format('woff2'),
+         url('../font/hvd_edding-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font: Arial, 1em;
+    background-image: url('../images/abstractPic.jpg');
+    
+}
+h1{
+    font-size: 2em;
+    font-family:'hvd_edding_780normal' ;
+}
+h3{
+    font-size: 1.5em;
+    border-bottom: 1px, solid, black;
+}
+.fonts{
+    font-family:"Comic Sans MS";
+    font-weight: bold;
+    color:orange;
+    font-style: italic;
+    font-size: 1.25em;
+}
+.colors{
+    color: red;
+    font-weight: bold;
+}
+.backgrounds{
+    color: green;
+    font-family: "Trebuchet MS";
+    font-size: 1.25em;
+}
+.more{
+   color: blue;
+   text-decoration: underline;
+   border: 1px, dashed, gray;
+   background-color: #D69BBE;   
+}
+nav{
+   width: 175px;
+   background-color: #E7DBF6;
+   float: left;
+}
+article{
+    margin-left: 175px;
+    background-color: white;
+    padding: 10px;
+}
+footer{
+    font-size: 12px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+#outerwrapper{
+    width: 650px;
+    background-color: #E7DBF6;
+    margin-left: auto;
+    margin-right: auto;
+}
+.second-list{
+    list-style-image:url('../images/peace.png');
+}
