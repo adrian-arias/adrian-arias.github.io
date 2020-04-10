@@ -1,0 +1,55 @@
+/*Adrian Arias 4/10/2020*/
+@font-face {
+    font-family: 'arbutusregular';
+    src: url('../fonts/arbutus-regular-webfont.woff2') format('woff2'),
+         url('../fonts/arbutus-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#outerwrapper {
+
+	margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+} 
+.floatleft { 
+    float: left;
+    margin-right: 3%;
+}
+.floatright {
+    float: right;
+    margin-left: 3%;
+}
+main, footer { 
+    clear: both;
+}
+body{
+    background-color: #B8D1EB;
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+main{
+    background-color: #C5A98B;
+    padding: 10px;
+}
+.links{
+    list-style: none;
+}
+h1{
+    font-family: 'Freckle Face', cursive;
+}
+h2{
+    font-family: 'arbutusregular';
+    font-weight: normal;
+    font-style: italic;
+}
+.tips{
+    list-style-image: url(../images/liltomato.png);
+}
+footer{
+    font-size: .75em;
+    background-color: lightslategray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
