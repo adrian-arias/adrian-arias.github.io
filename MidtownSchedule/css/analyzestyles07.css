@@ -1,0 +1,77 @@
+/* Style sheet created by: Adrian Arias, 4/15/2020 */
+
+/* Style for body specifies a background color */
+body {
+	background-color: #FFFFFF;
+}
+
+/* Style for the container element */
+#container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the header element */
+header {
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #FFFFFF;
+	color: #4E9657;
+	padding: 0.5%;
+	margin-left: 1%;
+	font-size: 3em;
+}
+
+/* Style for the nav element */
+nav {
+	padding: 0.5%;
+}
+
+/* Style for the nav list item elements */
+nav li {
+	display: inline;
+}
+
+/* Style for the nav links element */
+nav li a {
+	color: #4E9657;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-decoration: none;
+}
+/* Style for the table */
+table{
+  width: 100%;
+}
+td, th {
+	border: 1px solid black;
+}
+
+main{
+	padding: 1em;
+	background-color: #4E9657;
+}
+section{
+	color: #4E9657;
+	background-color: white;
+	padding:1em;
+}
+article{
+	color: black;
+	border-width: thin;
+}
+aside{
+	background-color: #4E9657;
+	text-align: center;
+	color: white;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-radius: 25px;
+}
+footer{
+	text-align: center;
+	font-size: .70em;
+}
+h3{
+	text-align: center;
+}
