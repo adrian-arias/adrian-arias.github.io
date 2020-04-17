@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'amatic_scregular';
+    src: url('../fonts/amaticsc-regular-webfont.woff2') format('woff2'),
+         url('../fonts/amaticsc-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Adrian Arias 4/17/2020*/
+
+	 
+#outerwrapper {	
+
+	background: rgba(243,205,170, 0.4);
+	border-radius: 15%;	
+	align-content: center;
+	
+}
+footer{
+	font-size: 1em;
+	padding: 10px;	
+	text-align: center;
+}
+main{
+	background-image: linear-gradient(to left, #FFFFFF, #F0F9E6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: 'Sirin Stencil', cursive;
+
+}
+html{
+	background-image: url(../images/jewelry.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+	float: left;
+	border-radius: 10em;
+}
+.nobullets{
+	list-style-type: none;
+	font-size: 1.5em;
+}
+h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 4em;
+}
+h2{
+	font-family: 'amatic_scregular';
+	font-style: italic;
+	font-size: 2em;
+}
+.addrightmargin{
+	margin-right: 10%;
+}
+nav{
+	float: none;
+}
+
+
+
+
