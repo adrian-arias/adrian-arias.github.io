@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--Adrian Arias 4/18/2020-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Contact Page">
+        <meta name="keywords" content="Portfolio, Contact Info">
+        <meta name="author" content="Adrian Arias">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/ExperienceStyle.css">
+        <link rel="stylesheet" href="css/ExperienceTableStyle.css">
+        <title>Projects</title>
+    </head>
+    <header>
+      <nav> 
+        <ul>
+        <li><a href="Home.html"><img src="images/Logo.png" alt="logo" id="logo"></a></li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Experience.html">Experience</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+       </ul>  
+     </nav> 
+    </header>  
+    <main>
+    <body>
+
+       <h2 class="ContactTitle">Fill out the form below for a project request</h2>
+
+      <form action="mailto:adrianarias@my.cwi.edu?subject=Personal Portfolio Mail" enctype="text/plain" method="POST">
+        <fieldset>
+          <br>     
+        <label for="company">Company Name:</label><br> 
+        <input type="text" name="compName" size="40" id="company"><br>
+       
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" size="40" id="email"><br>
+
+        <label for="Pnumber">Phone Number:</label><br>
+        <input type="tel" name="Pnumber" size="40" id="Pnumber"><br>
+             
+        <label for="comment">Enter your project request for a quota:</label><br>
+        <textarea cols="100" rows="10" name="comment"></textarea><br><br>
+                               
+        
+        <input type="radio" id="personal" name="option" value="personal">
+        <label for="personal">Personal</label><br>
+
+        <input type="radio" id="business" name="option" value="business">
+        <label for="business">Business</label><br>
+        <br>
+
+
+        <input type="submit" id="submit" value="Submit" class="btn"> 
+        <input type="reset" id="reset" value="Clear" class="btn">
+
+        </fieldset>
+       </form>
+                                     
+    </body>
+    </main>
+    <br>
+    <footer>
+        <a href="https://www.linkedin.com/in/adrian-arias-a60301133?trk=people-guest_people_search-card" target="_blank">
+    <img src="images/LinkedInIcon.png" id="LinkedIn" alt="LinkedIn Icon"></a>
+ 
+        <a href="https://github.com/adrian-arias" target="_blank">
+        <img src="images/Git-Hub.png" id="GitHub" alt="Git-Hub Icon"></a>
+     </footer>
+</html>

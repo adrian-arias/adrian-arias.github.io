@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--Adrian Arias 4/18/2020-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Contact Page">
+        <meta name="keywords" content="Portfolio, Contact Info">
+        <meta name="author" content="Adrian Arias">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/ExperienceStyle.css">
+        <link rel="stylesheet" href="css/ExperienceTableStyle.css">
+        <title>Contact</title>
+    </head>
+    <header>
+      <nav> 
+        <ul>
+        <li><a href="Home.html"><img src="images/Logo.png" alt="logo" id="logo"></a></li>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Experience.html">Experience</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+       </ul>  
+     </nav> 
+    </header>  
+    <main>
+    <body>
+
+       <h2 id="contactTitle">Fill out the form below to contact me</h2>
+
+      <form action="mailto:adrianarias@my.cwi.edu?subject=Personal Portfolio Mail" enctype="text/plain" method="POST">
+        <fieldset>
+          <br>     
+        <label for="company">Company Name:</label><br> 
+        <input type="text" name="compName" size="40" id="company"><br>
+
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" size="40" id="fname"><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" size="40" id="lname"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" size="40" id="email"><br>
+
+        <label for="Pnumber">Phone Number:</label><br>
+        <input type="tel" name="Pnumber" size="40" id="Pnumber"><br>
+
+                
+        <label for="comment">Enter your comments, questions, or feedback:</label><br>
+        <textarea cols="100" rows="10" name="comment"></textarea><br><br>
+                             
+       <p>Select a type of position
+        <select name="TypeOfJob">
+            <option></option>
+             <option>Full-time</option>
+             <option>Part-time</option>
+             <option>Contract</option>
+             <option>Temporary</option>
+             <option>On Call</option>
+             <option>Not Hiring</option>
+         </select>
+        </p>
+       
+        <p>How did you hear about me?</p>
+        <input type="radio" id="indeed" name="option" value="indeed">
+        <label for="indeed">Indeed</label><br>
+
+        <input type="radio" id="linkedin" name="option" value="linkedin">
+        <label for="linkedin">LinkedIn</label><br>
+
+        <input type="radio" id="github" name="option" value="github">
+        <label for="github">Git-Hub</label><br>
+
+        <input type="radio" id="jobfair" name="option" value="jobfair">
+        <label for="jobfair">Job Fair</label><br>
+
+        <input type="radio" id="cwi" name="option" value="cwi">
+        <label for="cwi">College Of Western Idaho</label><br>
+
+        <input type="radio" id="other" name="option" value="other">
+        <label for="other">Other</label><br>
+
+       <input type="submit" id="submit" value="Submit" class="btn"> 
+       <input type="reset" id="reset" value="Clear" class="btn">
+       </fieldset>
+       </form>
+                                     
+    </body>
+    </main>
+    <br>
+    <footer>
+        <a href="https://www.linkedin.com/in/adrian-arias-a60301133?trk=people-guest_people_search-card" target="_blank">
+    <img src="images/LinkedInIcon.png" id="LinkedIn" alt="LinkedIn Icon"></a>
+ 
+        <a href="https://github.com/adrian-arias" target="_blank">
+        <img src="images/Git-Hub.png" id="GitHub" alt="Git-Hub Icon"></a>
+     </footer>
+</html>
