@@ -1,0 +1,86 @@
+/* Adrian Arias 5/2/2020 */
+
+body { 
+	background-color: #F5F5F5;
+    color: #3F2860;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header { 
+	background-color: #9BC1C2; 
+    background-image: url(../images/lilyheader.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+h1 { 
+	text-indent: 1em;
+    line-height: 400%; 
+}
+
+nav { 
+	 font-weight: bold; 
+	 margin: 0;
+	 padding: 0;
+	 list-style-type: none;
+}
+
+footer { 
+	background-color: #9BC1C2; 
+    font-size: small;
+	text-align: center;
+	font-style: italic;
+	padding: .5em;
+}
+
+address{
+	margin-bottom: .5em;
+}
+
+/*Ul Style*/
+
+#info{
+	list-style-image: url(../images/yogabullet.png);
+	margin-left: 3em;
+}
+
+/* Table Style*/
+
+.schedule{
+	border-collapse: collapse;
+	border-color: black;
+	border-style: solid;
+	width: 100%;
+	margin-bottom: .5em;
+}
+
+tr, td{
+	border-color: black;
+	border-style: solid;
+    text-align: center;
+}
+
+
+/*Mobile Style Breakpoint*/
+
+@media screen and (max-width: 641px){
+	
+	nav{
+		display: block;
+	}
+	img{
+		display: none;
+	}
+	body{
+		background-image: url(../images/yogamobile.png);
+		background-position: center;
+	}
+	
+}
+
+/*Tablet Style Breakpoint*/
+ @media screen and (max-width: 768px){
+	 nav{
+		 display: inline;
+	 }
+ }
