@@ -1,0 +1,6 @@
+@mixin Heading-Shawdow {
+    text-shadow: $offset $offset $offset;
+}
+@mixin Border {
+    border: $size $type $Color1;
+}

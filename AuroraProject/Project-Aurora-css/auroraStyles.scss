@@ -1,0 +1,75 @@
+
+$color2: #FFF;
+$color3: #001534;
+$color4:#D8464B;
+$color5:#11AF82;
+$color6:#D6FFF5;
+$background: #5A3E85;
+
+$type: solid;
+$size: .1rem;
+$padding: 1.5rem;
+$margin: 1.5rem;
+$width: 100%;
+
+@mixin Heading-Shawdow {
+    text-shadow: $offset $offset $offset;
+}
+@mixin Border {
+    border: $size $type $Color1;
+}
+
+.form {
+    width: $width;
+    padding-bottom: $padding;
+}
+
+.form__heading {
+    width: $width;
+	@include Heading-Shawdow;
+    color: $color2;
+    background: $background;
+    line-height: 5rem;
+    padding: $padding;
+}
+     
+.form__label {
+    color: $color3;
+    display: block;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-top: $padding;
+}
+
+.form__input {
+    width: $width;
+    padding: $padding;
+    background: $color3;
+    @include Border;
+    color: $color6;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.75rem;
+}
+
+.form__input:focus {
+    background: $background;
+    border: $background;
+    color:$color2;
+}
+
+.form__input:invalid {
+    background: $color4;
+    border: $color2;
+    color: $color2;
+}
+
+.form__textarea {
+    width: $width;
+    color: $background;
+    background: $color3;
+    @include Border;
+    outline: none;
+    padding: $padding;
+    margin-bottom: $margin;
+}

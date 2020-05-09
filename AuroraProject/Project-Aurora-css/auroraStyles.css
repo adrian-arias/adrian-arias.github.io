@@ -1,0 +1,55 @@
+
+.form {
+    width: 100%;
+    padding-bottom: 1.5rem;
+}
+
+.form__heading {
+    width: 100%;
+	text-shadow: 0.25rem 0.25rem #11af82;
+    color: #FFF;
+    background: #5A3E85;
+    line-height: 5rem;
+    padding: 1.5rem;
+}
+     
+.form__label {
+    color: #CDFF62;
+    display: block;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding-top: 1.5rem;
+}
+
+.form__input {
+    width: 100%;
+    padding: 1.5rem;
+    background: #CDFF62;
+    border: .1rem solid #5A3E85;
+    color: #D6FFF5;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.75rem;
+}
+
+.form__input:focus {
+    background: #5A3E85;
+    border: #5A3E85;
+    color: #FFF;
+}
+
+.form__input:invalid {
+    background: #D8464B;
+    border: #FFF;
+    color: #FFF;
+}
+
+.form__textarea {
+    width: 100%;
+    color: #5A3E85;
+    background: #CDFF62;
+    border: .1rem solid #5A3E85;
+    outline: none;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
