@@ -1,0 +1,306 @@
+.balloon-container {
+  width: 120px;
+  height: 175px;
+  position: absolute;
+  left: 75%;
+  bottom: 55%;
+  -webkit-animation: fly 20s both linear, balloonMove 8s 1.2s ease-in-out;
+          animation: fly 20s both linear, balloonMove 8s 1.2s ease-in-out;
+}
+
+.balloon-container .balloon {
+  background-image: URL("../images/balloon.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@-webkit-keyframes fly {
+  from {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  to {
+    -webkit-transform: translateX(-1600px);
+            transform: translateX(-1600px);
+  }
+}
+
+@keyframes fly {
+  from {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  to {
+    -webkit-transform: translateX(-1600px);
+            transform: translateX(-1600px);
+  }
+}
+
+@-webkit-keyframes balloonMove {
+  0% {
+    top: 100px;
+  }
+  20% {
+    top: 70px;
+  }
+  40% {
+    top: 120px;
+  }
+  60% {
+    top: 40px;
+  }
+  80% {
+    top: 30px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+
+@keyframes balloonMove {
+  0% {
+    top: 100px;
+  }
+  20% {
+    top: 70px;
+  }
+  40% {
+    top: 120px;
+  }
+  60% {
+    top: 40px;
+  }
+  80% {
+    top: 30px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+
+.car {
+  height: 60px;
+  width: 200px;
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  background-image: URL("../images/car.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 99;
+  -webkit-animation: drive 20s both cubic-bezier(0.27, 0.49, 0.29, -0.37);
+          animation: drive 20s both cubic-bezier(0.27, 0.49, 0.29, -0.37);
+}
+
+.car .wheel {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  bottom: -9px;
+  background-image: URL("../images/wheel.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-animation: rotation 1s infinite linear;
+          animation: rotation 1s infinite linear;
+}
+
+.car .wheel.back {
+  left: 28px;
+}
+
+.car .wheel.front {
+  left: 155px;
+}
+
+@-webkit-keyframes drive {
+  from {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  to {
+    -webkit-transform: translateX(1400px);
+            transform: translateX(1400px);
+  }
+}
+
+@keyframes drive {
+  from {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  to {
+    -webkit-transform: translateX(1400px);
+            transform: translateX(1400px);
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+.hill {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 100%;
+  height: 22%;
+  border-top-right-radius: 250%;
+  border-top-left-radius: 250%;
+  background-color: #adde60;
+  z-index: -1;
+}
+
+.hill::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  right: -250px;
+  width: 120%;
+  height: 110%;
+  border-top-right-radius: 85%;
+  border-top-left-radius: 0%;
+  background-color: #94c943;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+  -webkit-box-shadow: 0 0 25px #cbf191 inset;
+          box-shadow: 0 0 25px #cbf191 inset;
+}
+
+.hill::before {
+  background-color: #93cc3a;
+  border-top-left-radius: 0;
+  border-top-right-radius: 100%;
+  bottom: -20px;
+  content: "";
+  height: 110%;
+  left: -54px;
+  position: absolute;
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+  width: 120%;
+}
+
+.road {
+  height: 100px;
+  position: absolute;
+  bottom: 30px;
+  background-color: grey;
+  padding: 0;
+  width: 100%;
+}
+
+.road::after {
+  position: relative;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 50px;
+  bottom: -100px;
+  background-color: #93CC3A;
+}
+
+.road .crossing {
+  position: absolute;
+  left: 450px;
+  height: 100%;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  z-index: 1;
+}
+
+.road .crossing [class^="line"] {
+  background-color: white;
+  height: 16px;
+  -webkit-transform: skewX(-38deg);
+          transform: skewX(-38deg);
+}
+
+.road .crossing .line-1 {
+  margin-left: 69px;
+  margin-right: 9px;
+}
+
+.road .crossing .line-2 {
+  margin-left: 46px;
+  margin-right: 26px;
+}
+
+.road .crossing .line-3 {
+  margin-left: 23px;
+  margin-right: 43px;
+}
+
+.road .crossing .line-4 {
+  margin-left: 0px;
+  margin-right: 60px;
+}
+
+.sun {
+  background: #ffe34b;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 50px rgba(253, 239, 39, 0.9);
+          box-shadow: 0 0 50px rgba(253, 239, 39, 0.9);
+  position: absolute;
+  left: 20%;
+  bottom: 65%;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #d1e4ea;
+  background: radial-gradient(ellipse at center, #d1e4ea 0%, #bae4f4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1e4ea', endColorstr='#bae4f4',GradientType=1 );
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */
